@@ -1,6 +1,6 @@
 
 # **COVID-19 Pandemic Data Analysis**
-In this project, I analyzed two datasets containing information on COVID-19 deaths and vaccines administered worldwide. I used MySQL to clean and analyze the data. After cleaning the datasets, I merged them to create a single comprehensive dataset which was later visualized used Tableau.
+In this project, I analyzed two datasets containing information on COVID-19 deaths and vaccines administered worldwide. I used MySQL to clean and analyze the data. After cleaning the datasets, I merged them to create a single comprehensive dataset which was later visualized using Tableau.
 
 # **Installation**
 To run this project, you will need to have MySQL and Tableau installed on your computer.

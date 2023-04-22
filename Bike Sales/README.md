@@ -1,14 +1,17 @@
 
-# Music dataset cleaning with MySQL Project
+# **Customer Demographics Analysis using Excel**
 
-For this project I used a dataset from Kaggle, that has the Spotify Hits from 2000 until 2019. It contained the name of the songs, the artist, genre and music attributes, such as danceability, energy, acusticness, etc.
+In this project, I performed a demographic analysis of customers using Microsoft Excel. I used a fictitious dataset, which included information about customer demographics, including gender, age, marital status, car ownership, number of children, and commute distance.
 
-After cleaning it with MySQL, I created a dashboard in Tableau, were we can see what were the most popular genres, how explicit lyrics in the music decreased in the years, and what are the most common music attributes.
+# **Methodology**
+I cleaned and reformatted the data using various Excel functions, and created three Pivot tables to summarize the information. I then used these Pivot tables to create visualizations in Excel to gain insights about the customers. I also added slicers to the visualizations, so users can easily filter the data by marital status, car ownership, and number of children.
 
-The original files used, the MySQL code and the Tableau dashboard are in this folder.
+# **Results**
+The visualizations provide insights into the customers' demographics, such as the distribution of gender, age, and commute distance. The slicers allow for further exploration of the data, allowing users to filter by different categories and gain deeper insights. These insights can be used to inform marketing and sales strategies, and to better understand the customer base.
 
+# **Files**
+The Excel file used in this analysis is included in this repository, as well as the cleaned and reformatted dataset.
 
-## Tableau
-
-[Music Dashboard](https://public.tableau.com/app/profile/emiliano.zapata.fernandez/viz/MusicViz_16785414966950/Dashboard1)
+# **Conclusion**
+Overall, this project demonstrates the power of Excel as a tool for data analysis and visualization. By using Excel's functions, Pivot tables, and visualizations, I was able to gain valuable insights into the customers' demographics, which can be used to make more informed business decisions.
 

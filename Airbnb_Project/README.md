@@ -25,4 +25,4 @@ The original files used, the SQL code and the Visualization are all in this fold
 
 # Resources
 
-The resources used can be found in this repository.
+The original dataset and the MySQL code can be found in this folder.

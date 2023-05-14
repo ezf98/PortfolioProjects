@@ -9,6 +9,8 @@ From [Portfolio Project Nash]..Nashville
 Update [Portfolio Project Nash]..Nashville
 Set SaleDate = CONVERT(DATE,SaleDate)
 
+-- Adding a new column SaleDateConv for better handling of the dates.
+
 Alter Table Nashville
 Add SaleDateConv date;
 
@@ -18,7 +20,7 @@ Set SaleDateConv = CONVERT(DATE,SaleDate)
 Select SaleDateConv 
 FROM [Portfolio Project Nash]..Nashville
 
--- Populate Null Property Address values
+-- Fixing null PropertyAddress values using non-null values from other rows with the same ParcelID
 Select PropertyAddress
 FROM [Portfolio Project Nash]..Nashville
 Where PropertyAddress is null
@@ -38,7 +40,7 @@ JOIN [Portfolio Project Nash]..Nashville as b
 	 AND a.UniqueID <> b.UniqueID
 Where a.PropertyAddress is null
 
--- Separating the Property address into Individual Columns
+-- Separating the Property address into Individual Columns ((Address, City)
 
 Select PropertyAddress
 From [Portfolio Project Nash]..Nashville
@@ -61,10 +63,10 @@ Add PropertySplitCity Nvarchar(255);
 Update [Portfolio Project Nash]..Nashville
 Set PropertySplitCity = SUBSTRING(PropertyAddress, CHARINDEX(',', PropertyAddress) +1, LEN(PropertyAddress))
 
+-- Separating OwnerAddress into individual columns (Address, City, State)
 
 Select OwnerAddress
 From [Portfolio Project Nash]..Nashville
-
 
 
 Select 
